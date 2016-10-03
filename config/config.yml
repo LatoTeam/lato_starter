@@ -1,11 +1,13 @@
-# Impostazione voci del menu
+# Menu settings
 menu:
   starter_example:
     name: Example
     url: /lato/starter/example
     icon: example
+    position: 89
+    permission: 6
 
-# Impostazione assets custom
+# Custom assets settings
 assets:
   starter_application_css:
     url: lato_starter/application
