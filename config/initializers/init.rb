@@ -1,5 +1,4 @@
 include LatoCore::Interface
 
-# IMPOSTAZIONE FILE DI LINGUA
-
+# Set language datas
 STARTER_LANG = core_loadModuleLanguages('lato_starter')

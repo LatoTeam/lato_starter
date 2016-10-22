@@ -1,25 +1,18 @@
 module LatoStarter
-  module Back
-    # Classe che gestisce il pannello di backoffice del modulo
-    class BackController < ApplicationController
-      # Includo l'interfaccia di lato_core
-      include LatoCore::Interface
-      # Includo l'interfaccia di lato_view
-      include LatoView::Interface
-      # Includo l'interfaccia di lato_starter
-      include LatoStarter::Interface
+  module Back::BackController < ApplicationController
 
-      # Imposto layout di base dal lato_view
-      layout 'lato_layout'
+    include LatoCore::Interface
+    include LatoView::Interface
+    include LatoStarter::Interface
 
-      # Attivo il controllo delle credenziali
-      before_action :core_controlUser
+    # set lato view layout
+    layout 'lato_layout'
 
-      def starter
-        @message = STARTER_LANG['welcome']
-      end
-      
+    # check user is logged
+    before_action :core_controlUser
+
+    def starter
+      @message = STARTER_LANG['welcome']
     end
-    # Fine controller
   end
 end

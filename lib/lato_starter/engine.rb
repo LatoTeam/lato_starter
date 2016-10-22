@@ -20,7 +20,7 @@ module LatoStarter
       end
     end
 
-    # Add interface
+    # Add interface to main application
     config.autoload_paths << LatoStarter::Engine.root.join('lib/interface')
 
   end

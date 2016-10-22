@@ -1,9 +1,5 @@
 module LatoStarter
-  module Api
-    module V1
-      # Classe che gestisce le API del modulo
-      class ApiController < ApplicationController
-      end
-    end
+  module Api::V1::ApiController < ApplicationController
+
   end
 end
