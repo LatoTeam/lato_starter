@@ -1,5 +1,5 @@
 module LatoStarter
-  module Back::BackController < ApplicationController
+  class Back::BackController < ApplicationController
 
     include LatoCore::Interface
     include LatoView::Interface
@@ -14,5 +14,6 @@ module LatoStarter
     def starter
       @message = STARTER_LANG['welcome']
     end
+
   end
 end
